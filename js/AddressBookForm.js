@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     //add listener to verify name entered by user
     const name = document.querySelector('#name');console.log(name.value)
     const textError = document.querySelector('.text-error');
-    
+
      //adding listener at name input
     name.addEventListener('input',function(){       
         if(name.value.length == 0){
