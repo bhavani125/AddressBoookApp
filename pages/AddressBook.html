@@ -31,7 +31,69 @@
                     <a href="../pages/AddressBook.html" class="add-button">
                         <img src="../assests/cancel.jpg" alt="cancel-button"></a>
                 </div><br>
+                <div class="row-content">
+                    <input class="input" type="text" id="name" name="name" placeholder=""
+                           onchange="this.setAttribute('value',this.value)" required>
+                    <label class="form-label" for="name">Full Name</label>
+                </div>
+                <div class="row-content">
+                    <textarea  class="input-text" name="address" id="address" placeholder="" 
+                               onchange="this.setAttribute('value',this.value)" 
+                               style="height: 80px;" required></textarea>
+                    <label class="form-label-text" for="address">Address</label>
+                </div>
+                <div class="row-content">
+                    <select id="city" name="City" class="city" required>
+                        <option value="">Select City</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Chikmagalur">Chikmagalur</option>
+                        <option value="Hassam">Hassam</option>
+                        <option value="Shivamogga">Shivamogga</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Srinagar">Srinagar</option>
+                    </select>&nbsp;&nbsp;&nbsp;
+                    <select id="state" name="State" class="state" required>
+                        <option value="">Select State</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>&nbsp;&nbsp;&nbsp;
+                    <select id="zipcode" name="Zipcode" class="zipcode">
+                        <option value="">Select ZipCode</option>
+                        <option value="505174">505174</option>
+                        <option value="604102">604102</option>
+                        <option value="796543">796543</option>
+                        <option value="220245">220245</option>
+                        <option value="430281">430281</option>
+                        <option value="378654">378654</option>
+                        <option value="891081">891081</option>
+                        <option value="598754">598754</option>
+                        <option value="478654">478654</option>
+                        <option value="145108">145108</option>
+                    </select>
+                </div>
+                <div class="row-content">
+                    <input type="text" class="input" name="phone" id="phone" placeholder="" 
+                           onchange="this.setAttribute('value',this.value)" required>
+                    <label class="form-label" for="phoneNumber">phoneNumber</label>
+                </div>
             </form>
-        </div>    
+        </div> 
     </body>
 </html>
