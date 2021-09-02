@@ -163,7 +163,7 @@ select{
     align-content: flex-start;
     flex-grow: 1;
     padding: 12px;
-    border: 1px solid rgb(46, 140, 228);;
+    border: 1px solid skyblue;
     border-radius: 4px;
     resize: vertical;
     font: normal normal normal 17px Rubik;
@@ -171,4 +171,11 @@ select{
     letter-spacing: 0px;
     color:lightslategray;
     background-color: transparent;
+}
+/*UC4*/
+error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
