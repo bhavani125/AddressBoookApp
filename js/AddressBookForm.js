@@ -53,3 +53,11 @@ window.addEventListener('DOMContentLoaded',()=>{
         }
     });
 });
+//populate & save the addressbook object when submit buton is clicked
+const save = ()=> {
+    try{
+        let addressbook = new AddressBook();
+    }catch(e){
+        return;
+    }
+} 
