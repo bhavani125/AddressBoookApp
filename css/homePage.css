@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     height: 100%;
     background-color:whitesmoke;
 }
@@ -13,13 +12,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+ 
 }
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
     width: 80%;
 }
  img {
@@ -30,7 +28,6 @@ body {
 .add-text {
     font: normal normal bold 25px/25px Rubik;
     font-family: 'Rubik', sans-serif;
-    letter-spacing: 0px;
     color: blue;
 }
 .add-book{
@@ -44,3 +41,54 @@ body {
 }
 
 * {box-sizing: border-box;}
+/*UC1*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    background-color: #f7f7f7;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+.main-header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+   
+}
+.person-detail-text{
+    font: normal normal bold 24px/25px Roboto;
+    color:midnightblue;
+    opacity: 1;
+    
+}
+.person-count{
+    background-color:navy;
+    color: #ffffff;
+    border-radius: 40%;
+    font-size: 16px;
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+}
+.add-button{
+    display:inline-block;
+    font: normal normal normal 23px/26px Rubik;
+    color: #ffffff;
+    opacity: 1;
+    background:#0c7ba7 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+} 
+.add-button > img {
+    width: 20px;
+    height:auto;
+}
