@@ -53,16 +53,17 @@ window.addEventListener('DOMContentLoaded',()=>{
         }
     });
 });
-//populating & saving the addressbook object when submit button is clicked
+//populate & save addressbook object when submit buton is clicked
 const save = ()=> {
     try{
-        let addressBookData =  createAddressBook();
-        createAndUpdateStorage(addressBookData);
+        let addressbookData = createAddressBook();
+        createAndUpdateStorage(addressbookData);
     }catch(e){
         return;
     }
-} 
-//to populate employee object with html form data
+}
+
+//function to populate employee object with html form data
 const createAddressBook = ()=> {
     let addressbook = new AddressBook();
     try {
@@ -90,7 +91,7 @@ const createAddressBook = ()=> {
     return addressbook;
 }
 
-// to get form values by Id
+//function to get form values by Id
 const getInputValueById = (id=>{
     let value = document.querySelector(id).value;
     return value;
@@ -100,18 +101,20 @@ const setTextValue = (id,value) => {
     const element = document.querySelector(id);
     element.textContent = value;
 }
+
 //create and update local storage with addressbook object
-function createAndUpdateStorage(addressBookData){
+function createAndUpdateStorage(addressbookData){
     let addressbookList = JSON.parse(localStorage.getItem("AddressBookList"));
     if(addressbookList != undefined){
-        addressbookList.push(addressBookData);
+        addressbookList.push(addressbookData);
     }else{
-        addressbookList = [addressBookData];
+        addressbookList = [addressbookData];
     }
     alert(addressbookList.toString());
     localStorage.setItem("AddressBookList",JSON.stringify(addressbookList));
 }
-//to reset all elements in html form
+
+//reset function to reset all elements in html form
 const resetForm=()=>{
     setValue('#name',' ');
     setValue('#address',' ');
