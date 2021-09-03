@@ -62,7 +62,7 @@ const save = ()=> {
         return;
     }
 } 
-//function to populate employee object with html form data
+//to populate employee object with html form data
 const createAddressBook = ()=> {
     let addressbook = new AddressBook();
     try {
@@ -110,4 +110,18 @@ function createAndUpdateStorage(addressBookData){
     }
     alert(addressbookList.toString());
     localStorage.setItem("AddressBookList",JSON.stringify(addressbookList));
+}
+//to reset all elements in html form
+const resetForm=()=>{
+    setValue('#name',' ');
+    setValue('#address',' ');
+    setValue('#city','Select City');
+    setValue('#state','Select State');
+    setValue('#zipcode','Select ZipCode');
+    setValue('#phone',' '); 
+}
+//set id with given value
+const setValue=(id,value)=>{
+    const element = document.querySelector(id);
+    element.value = value;
 }

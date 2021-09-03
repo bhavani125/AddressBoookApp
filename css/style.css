@@ -48,7 +48,6 @@ body {
 /*UC2*/
 .form-content {
     margin-top: 40px;
-    min-height: 20px;
     display: flex;
     justify-content: center;
     align-items: cneter;
